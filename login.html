@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weddify</title>  
+    <link rel="stylesheet" type = "text/css" href="basicStyle.css">
+    <link rel="stylesheet" type ="text/css" href="LoginStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- {% static 'weddify/style.css' %} -->
+    <!-- {% block title %}{% endblock %} -->
+</head>
+<body>
+    <div class="navbar">
+        <a href="#logo" id="brand-logo"><i class=" fa fab fa-gratipay"></i>weddify</a>
+        <div class="dropdown">
+            <button class="dropbtn">Vendors
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#venues">Venues</a>
+                <a href="#beauty_services">Beauty Services</a>
+                <a href="#flourist">Flourist</a>
+                <a href="#photographers">Photography</a>
+            </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Paper Packages
+            <i class=" fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Invitations </a>
+            <a href="#">Save The Date's </a>
+            <a href="#">PostCards + Holiday Cards </a>
+          </div>
+        </div>
+        <a href="#dreamboard">DreamBoard</a>
+         <!-- {% if user.is_authenticated %} -->
+        <a href="#dashboard">Dashboard</a>
+
+        <form action="#url" method="post" class="search"><i class="fa fas fa-search" style=" color: white;"></i> <input type="text" name="search" id="search" placeholder="search items"></form>
+        <!-- {% if user.is_authenticated %} -->
+        <a href="#sign_up" id="security"> Sign up</a>
+        <a href="#login" id="security"><i class="fa fas fa-unlock-alt" style="margin-right: 5px;"></i>Login</a>
+         <!-- {% else %} -->
+         <!-- <div id="loggedin"><i class="fa fas fa-user-lock"> {couple_girl}+{couple_boy} </i></div> -->
+      </div>
+      <div class="wrapper fadeInDown">
+          <div id="formContent">
+              <h2 class="active">Sign in</h2>
+              <!-- there should proba be a tag in sign up -->
+              <h2 class="inactive underlineHover"><a href="#signup"></a> Sign Up</h2>
+
+              <div class="fadeIn first">
+                <i class=" fa far fa-user"></i>
+              </div>
+              <form action="POST">
+                  <input type="text" name="login" id="login" class="fadeIn Second" placeholder="login">
+                  <input type="text" name="login" id="login" class="fadeIn Third" placeholder="password">
+                  <input type="submit" class="fadeIn third"value="log in">
+              </form>
+              <div class="formFooter">
+                  <a href="#" class="underlineHover">Forgot Password?</a>
+              </div>
+          </div> 
+      </div>
+</body>
+</html>

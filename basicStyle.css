@@ -1,0 +1,99 @@
+html{
+    background-color: rgb(253, 199, 199);
+}
+body{
+    margin: 0;
+}
+.navbar{
+    overflow: hidden;
+    background-color: indianred;
+    font-family: Arial, Helvetica, sans-serif ;
+    width: 100%;
+}
+.navbar a{
+    float: left;
+    font-size: medium;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+#security{
+    float: right;
+    font-size: medium;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.search{
+    float: right;
+    padding: 14px 16px;
+    
+
+}
+#search{
+    border: none;
+    outline: none;
+    color: white;
+    
+    background-color: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    
+}  
+#search::placeholder{
+    color: white;
+}
+#brand-logo{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#brand-logo i{
+    margin: 3px;
+}
+
+.dropdown{
+    float: left;
+    overflow: hidden;
+}
+.dropdown .dropbtn{
+    font-size: medium;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+.navbar a:hover, .dropdown:hover .dropbtn{
+    background-color: rgb(212, 150, 150);
+}
+#brand-logo:hover{
+    background-color: indianred;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: rgb(182, 80, 80);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgb(85, 36, 36);
+    z-index: 1;
+
+}
+.dropdown-content a{
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+
+}
+.dropdown-content a:hover {
+    background-color: rgb(212, 150, 150);
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
