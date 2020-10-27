@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> weddify| {% block title %}{% endblock %} </title> 
+    {% load static %} 
+    <link rel="stylesheet" type="text/css" href="{% static 'weddify/basicStyle.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    {% block head %}{% endblock %}
+</head>
+<body>
+    <div class="navbar">
+        <a href="#logo" id="brand-logo"><i class=" fa fab fa-gratipay"></i>weddify</a>
+        <div class="dropdown">
+            <button class="dropbtn">Vendors
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#venues">Venues</a>
+                <a href="#beauty_services">Beauty Services</a>
+                <a href="#flourist">Flourist</a>
+                <a href="#photographers">Photography</a>
+            </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Paper Packages
+            <i class=" fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Invitations </a>
+            <a href="#">Save The Date's </a>
+            <a href="#">PostCards + Holiday Cards </a>
+          </div>
+        </div>
+        <a href="#dreamboard">DreamBoard</a>
+        <a href="#dashboard">Dashboard</a>
+
+        <form action="#url" method="post" class="search"><i class="fa fas fa-search" style=" color: white;"></i> <input type="text" name="search" id="search" placeholder="search items"></form>
+      
+        <a href="#sign_up" id="security"> Sign up</a>
+        <a href="login.html" id="security"><i class="fa fas fa-unlock-alt" style="margin-right: 5px;"></i>Login</a>
+         
+         
+      </div>
+</body>
+</html>
