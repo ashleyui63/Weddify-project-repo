@@ -1,0 +1,27 @@
+{% extends "weddify/layout.html" %}
+{% load static %} 
+    {% block title %}Login{% endblock %}
+    {% block head %}
+        <link rel="stylesheet" href="{% static 'weddify/loginStyle.css' %}">
+    {% endblock %}
+    {% block body %}
+        <div class="wrapper fadeInDown">
+            <div id="formContent">
+                <h2 class="active">Sign in</h2>
+                <!-- there should proba be a tag in sign up -->
+                <h2 class="inactive underlineHover"><a href="#signup"></a> Sign Up</h2>
+
+                <div class="fadeIn first">
+                <i class=" fa far fa-user"></i>
+                </div>
+                <form action="POST">
+                    <input type="text" name="login" id="login" class="fadeIn Second" placeholder="username">
+                    <input type="text" name="login" id="login" class="fadeIn Third" placeholder="password">
+                    <input type="submit" class="fadeIn third"value="log in">
+                </form>
+                <div class="formFooter">
+                    <a href="#" class="underlineHover">Forgot Password?</a>
+                </div>
+            </div> 
+        </div>
+    {% endblock %}
