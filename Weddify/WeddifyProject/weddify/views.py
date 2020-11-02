@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import User
+# from .models import User
 # Create your views here.
 def index(request):
     return render(request, "Weddify/index.html")
@@ -12,3 +12,5 @@ def register(request):
         username = request.POST["login"]
         password = request.POST["password"]
     return render( request, "Weddify/register.html")
+def venues(request):
+    return render(request, "Weddify/venues.html")
